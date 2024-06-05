@@ -53,7 +53,7 @@ public class EmployeeDAO {
         PreparedStatement st = conn.prepareStatement(DELETE_EMP);
         st.setInt(1, employee_id);
         st.executeUpdate();
-    }
+    }//
 
     public Employee selectEmp(int employee_id) throws SQLException, ClassNotFoundException {
         Class.forName("org.sqlite.JDBC");
